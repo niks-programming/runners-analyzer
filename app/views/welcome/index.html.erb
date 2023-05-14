@@ -1,8 +1,9 @@
 <h1>Welcome To Runner's Analyzer</h1>
 
-<%= button_to "Sign Up", new_user_registration_path, :method => "get" %>
+<%= button_to "Sign Up", new_user_registration_path, :method => "get" unless user_signed_in? %>
+<%= button_to "Log Out", destroy_user_session_path, :method => "delete" if user_signed_in? %>
 <br>
-<button type="button"> Sign In </button>
+<%= button_to "Sign In", new_user_session_path, :method => "get" unless user_signed_in? %>
 
 <div class = "pages">
     <h3> Pages </h3>
