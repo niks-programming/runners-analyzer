@@ -8,6 +8,7 @@ class CreateRaces < ActiveRecord::Migration[7.0]
       t.string :city 
       t.string :state
       t.date   :race_date
+      t.integer :user_id
       t.timestamps
     end
   end

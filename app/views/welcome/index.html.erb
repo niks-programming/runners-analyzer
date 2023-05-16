@@ -8,7 +8,7 @@
 <div class = "pages">
     <h3> Pages </h3>
     <ul>
-        <li>Log A Race</li>
+        <li><%=link_to "Log A Race", new_race_path, :method => "post" if user_signed_in? %></li>
         <li>View Your Races</li>
         <li>Metrics Dashboard</li>
     </ul>
