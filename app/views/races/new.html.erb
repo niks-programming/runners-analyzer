@@ -1,3 +1,29 @@
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
+
 <h2>Enter Your Race Results!</h2>
 
-
+<%= form_for @race do |form| %>
+  <%= form.label :name, "Race Name:" %>
+  <%= form.text_field :name %>
+  <br><br>
+  <%= form.label :distance, "Distance:" %>
+  <%= form.text_field :distance %>
+  <br><br>
+  <%= form.label :finish_time, "Finish Time:" %>
+  <%= form.text_field :finish_time %>
+  <br><br>
+  <%= form.label :city, "City:" %>
+  <%= form.text_field :city %>
+  <br><br>
+  <%= form.label :state, "State:" %>
+  <%= form.text_field :state %>
+  <br><br>
+  <%= form.label :race_date, "Race Day:" %>
+  <%= form.date_field :race_date %>
+  <br><br>
+  <%= form.submit "Submit Race" %>
+<% end %>
