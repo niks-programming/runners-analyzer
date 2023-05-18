@@ -7,15 +7,16 @@ class RacesController < ApplicationController
         @race = Race.new(race_params)
         @race.user = current_user
         if @race.save
-            redirect_to @race
+            redirect_to action: "index"
         else  
-            flash[:error] = @race.errors.full_messages
+            #flash[:error] = @race.errors.full_messages
             render :new, status: :unprocessable_entity
         end
     end 
 
     def index 
-
+        @races = current_user.races 
+        puts @races
     end 
 
     def edit 

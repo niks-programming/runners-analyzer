@@ -1,0 +1,11 @@
+<h1>Your Races</h1>
+
+<ul>
+  <% @races.each do |race| %>
+    <li>
+        <%= race.name %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Record A New Race!", new_race_path %>
