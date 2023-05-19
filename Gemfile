@@ -12,6 +12,9 @@ gem "devise"
 # Strava
 gem "strava-ruby-client"
 
+# Omniauth Strava
+gem "omniauth-strava"
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
