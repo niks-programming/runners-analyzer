@@ -25,5 +25,8 @@
   <%= form.label :race_date, "Race Day:" %>
   <%= form.date_field :race_date %>
   <br><br>
+  <%= form.label :medal, "Upload Medal"%>
+  <%= form.file_field :medal%>
+  <br><br>
   <%= form.submit "Submit Race" %>
 <% end %>

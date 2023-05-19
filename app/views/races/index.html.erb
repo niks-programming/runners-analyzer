@@ -9,3 +9,12 @@
 </ul>
 
 <%= link_to "Record A New Race!", new_race_path %>
+
+<h1>Your Medals</h1>
+
+<% @races.each do |race| %>
+  <% if race.medal.attached? %>
+    <image src="<%=(url_for(race.medal))%>" width = "200" height = "200">
+    <br><br>
+  <% end %>   
+<% end %>
