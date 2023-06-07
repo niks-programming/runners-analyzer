@@ -103,8 +103,6 @@ GEM
     faraday-multipart (1.0.4)
       multipart-post (~> 2)
     faraday-net_http (3.0.2)
-    figaro (1.2.0)
-      thor (>= 0.14.0, < 2)
     globalid (1.1.0)
       activesupport (>= 5.0)
     hashie (5.0.0)
@@ -269,11 +267,10 @@ DEPENDENCIES
   cssbundling-rails (~> 1.1)
   debug
   devise
-  figaro
   importmap-rails
   jbuilder
   jsbundling-rails (~> 1.1)
-  omniauth-strava (~> 0.0.6)
+  omniauth-strava
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   selenium-webdriver

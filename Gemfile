@@ -12,11 +12,8 @@ gem "devise"
 # Strava
 gem "strava-ruby-client"
 
-# Figaro
-gem "figaro"
-
 # Omniauth Strava
-gem 'omniauth-strava', '~> 0.0.6'
+gem "omniauth-strava"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
